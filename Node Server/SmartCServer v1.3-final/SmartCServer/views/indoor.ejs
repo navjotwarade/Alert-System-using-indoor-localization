@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Smart Campus Security Alert System</title>
+		<link rel="shortcut icon" type="image/x-icon" href="s.png" />
+		<style type="text/css">
+			body{
+				background-color:light-blue;
+			}
+			
+			#img{
+				margin-top:2%;
+				margin-left:5%;
+				width: 45%;
+				position:absolute;
+				left: 0px;
+				top: 11.5%;
+			}
+			
+			#navbar{
+				width:100%;
+				background-color:blue;
+				position:absolute;
+				left:0px;
+				top:0px;
+			}
+			
+			.button {
+				background-color: #4CAF50;
+				border: none;
+				color: white;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+			}
+			
+			.circle1{
+				background-color:blue;
+				position:absolute;
+				left: 9%;
+				top: 35%;
+			}
+			
+			.circle2{
+				background-color:blue;
+				position:absolute;
+				left: 14%;
+				top: 36%;
+			}
+			
+			.circle3{
+				background-color:blue;
+				position:absolute;
+				left: 14%;
+				top: 33%;
+			}
+			
+			#bt1{
+				opacity:0.4;				
+			}
+			
+			#bt2{
+				opacity:0.4;			
+			}
+			
+			#bt3{
+				opacity: 0.4;
+			}
+			
+			#beacon{
+				width:2%;
+				height:2%;
+				border-radius:7px;
+				margin-top:-1%;
+				margin-left:-1%;
+				opacity:0.7;
+			}
+			
+			#details{
+				margin-left: 57%;
+				margin-top: 7%;
+			}
+			
+			#dot{
+				background-color:red;
+				width:10px;
+				height:10px;
+				border-radius:5px;
+				position:absolute;
+			}
+
+			#dot1{
+				background-color:green;
+				width:20px;
+				height:20px;
+				border-radius:10px;
+				position:absolute;
+				opacity: 0.5;
+			}
+
+			#Test{
+
+				position:absolute;
+				margin-top: 26px;
+			}
+			
+		</style>
+	</head>
+	
+	
+	<body>		
+		<div id="navbar">
+			<h1 align="center" style="color:white; ">Smart Campus Security Alert System</h1>
+		</div>
+		
+		<div id="details">
+			<h1>Alert Details.</h1>
+			<p>Engineering Building</p>
+			<p id="paraDetails"><%= symbolicId %></p>
+			<button class="button">Next alert</button>
+		</div>
+		
+		<div id="img">
+			<div id="dot1" ></div>
+			<div id="dot" ></div>
+			<img id="Test1" src="Test.jpg" width="100%">
+			
+			
+			
+			<div id="bt1" class="circle1"></div>
+			
+			
+			<div id="bt2" class="circle2"></div>
+			
+			
+			<div id="bt3" class="circle3"></div>
+			
+		</div>
+		
+		
+		
+		<script type="text/javascript">
+		
+		
+		/*<!-- setTimeout(function(){
+  		 window.location.reload(1);
+		}, 5000); -->*/
+
+
+			var bt1 = 0; //<%- JSON.stringify(distance1) %>;
+			var bt2 = 0; //<%- JSON.stringify(distance2) %>;
+			var bt3 = 0; //<%- JSON.stringify(distance3) %>;
+			var r1, r2, r3;
+			var roomname;
+			
+			var mapId=2;
+			//x and y co-ordinates
+			console.log(<%- JSON.stringify(intersectX) %> +" and "+ <%- JSON.stringify(intersectY) %>);
+		    var x = <%- JSON.stringify(intersectX) %>,
+				y = <%- JSON.stringify(intersectY) %>;
+			//removes margin errors
+			var left1 = x/16,
+				right1 = y/16;
+
+			/*var left1 = a/16,
+				right1 = b/14.43;*/
+			console.log(left1 + " hi " + right1);
+			document.getElementById("dot").style.marginLeft = (left1-0.625).toString().concat("%");
+			document.getElementById("dot").style.marginTop = (right1-0.693).toString().concat("%");
+			
+			document.getElementById("dot1").style.marginLeft = (left1-1.25).toString().concat("%");
+			document.getElementById("dot1").style.marginTop = (right1-1.386).toString().concat("%");
+
+			r1 = bt1*20/40;
+			document.getElementById("bt1").style.width = r1.toString().concat("%");
+			document.getElementById("bt1").style.height = r1.toString().concat("%");
+			document.getElementById("bt1").style.marginLeft = (r1/-2).toString().concat("%");
+			document.getElementById("bt1").style.marginTop = (r1/-2).toString().concat("%");
+			document.getElementById("bt1").style.borderRadius = (bt1*20).toString().concat("px");
+			
+			r2 = bt2*20/40;
+			document.getElementById("bt2").style.width = r2.toString().concat("%");
+			document.getElementById("bt2").style.height = r2.toString().concat("%");
+			document.getElementById("bt2").style.marginLeft = (r2/-2).toString().concat("%");
+			document.getElementById("bt2").style.marginTop = (r2/-2).toString().concat("%");
+			document.getElementById("bt2").style.borderRadius = (bt2*20).toString().concat("px");
+			
+			r3 = bt3*20/40;
+			document.getElementById("bt3").style.width = r3.toString().concat("%");
+			document.getElementById("bt3").style.height = r3.toString().concat("%");
+			document.getElementById("bt3").style.marginLeft = (r3/-2).toString().concat("%");
+			document.getElementById("bt3").style.marginTop = (r3/-2).toString().concat("%");
+			document.getElementById("bt3").style.borderRadius = (bt3*20).toString().concat("px");
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'eclipse'
+
+mainClassName = 'org.redpin.server.standalone.RedpinStandaloneServer'
+
+jar {
+    manifest {
+        attributes "Main-Class": mainClassName
+    }
+
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+dependencies {
+    compile project(':core')
+    compile fileTree(dir: 'lib', include: '*.jar')
+    compile 'com.google.code.gson:gson:2.3'
+    testCompile 'junit:junit:4.+'
+}
+

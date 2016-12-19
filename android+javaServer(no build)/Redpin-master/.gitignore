@@ -1,0 +1,17 @@
+# Build files
+*/out/
+*/bin/
+*build/
+
+# IntelliJ Project files
+*.iml
+.idea/
+
+# Gradle
+.gradle
+gradlew
+gradlew.bat
+gradle
+
+# Android
+local.properties
