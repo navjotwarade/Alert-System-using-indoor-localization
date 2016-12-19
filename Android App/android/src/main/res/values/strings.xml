@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_locations">Locations</string>
+    <string name="menu_delete">Delete</string>
+
+    <string name="app_name">Redpin</string>
+
+    <string name="redpin_authority">org.redpin.android.provider</string>
+
+    <string name="default_map_text"></string>
+    <string name="loading_text">Loading…</string>
+    <string name="options_menu_search_text">Search</string>
+    <string name="options_menu_add_map_text">Add map</string>
+    <string name="options_menu_listview_text">List</string>
+    <string name="options_menu_locate_text">Locate</string>
+    <string name="options_menu_main_text">Main</string>
+    <string name="default_list_text">List</string>
+
+    <string name="list_view_no_data">No data</string>
+
+    <string name="list_view_topbar_locationlist">Locations</string>
+    <string name="list_view_topbar_maplist">Maps</string>
+    <string name="list_view_topbar_searchlist">Search</string>
+
+    <string name="list_view_hint_search_text">Search text</string>
+
+    <string name="newmap_topbar_text">Add Map</string>
+    <string name="newmap_get_map_text">Get map</string>
+    <string name="newmap_map_url_label_text">URL:</string>
+    <string name="newmap_save_map_button_text">Save</string>
+    <string name="newmap_pick_image_label_text">Pick image</string>
+    <string name="newmap_pick_image_url_button_text">URL</string>
+    <string name="newmap_pick_image_phone_button_text">Phone</string>
+    <string name="newmap_hint_mapname">Map name</string>
+    <string name="newmap_hint_mapurl">Map URL</string>
+
+    <string name="newmap_loading_map">Loading map. Please wait…</string>
+    <string name="newmap_uploading_map">Uploading map. Please wait…</string>
+    <string name="newmap_loading_problem">Couldn\'t load a map from the specified URL</string>
+    <string name="newmap_uploading_problem">Couldn\'t upload the map to the server</string>
+    <string name="newmap_empty_url">Please specify URL</string>
+    <string name="newmap_empty_map_name">Please specify the map name</string>
+
+
+    <string name="host_preferences">Host</string>
+    <string name="port_preferences">Port</string>
+    <string name="preferences_category">Server preferences</string>
+
+    <string-array name="main_list_items">
+        <item>Maps</item>
+        <item>Locations</item>
+    </string-array>
+
+    <string name="connection_online">Connected to Redpin server</string>
+    <string name="connection_offline">Redpin server is not reachable</string>
+
+
+    <string name="map_download_failed">Download of map failed</string>
+    <string name="taking_measurement">Taking measurement.\nPlease wait…</string>
+    <string name="map_view_no_map_selected">No map selected</string>
+    <string name="map_view_title">Map View</string>
+    <string name="settings_view_credits">Credits:</string>
+    <string name="settings_view_credits_value">Luba Rogoleva\nPascal Brogle\nArno Fiva</string>
+    <string name="settings_view_copyright">Copyright:</string>
+    <string name="settings_view_copyright_value">ETH Zürich 2010</string>
+    <string name="settings_view_server_preferences">Server preferences</string>
+    <string name="title_activity_scmenu">SCmenu</string>
+    <string name="title_activity_navigationd">navigationd</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

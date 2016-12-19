@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:id="@+id/map_view"
+    android:background="@color/solid_white">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="44dip"
+        android:id="@+id/map_topbar"
+        android:background="@drawable/blackbar_glossy">
+
+        <ImageView
+            android:src="@drawable/menu_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/logo"
+            android:layout_marginLeft="5dip"
+            android:onClick="button_Mapview"
+            android:layout_marginTop="5dip"
+            android:layout_alignParentLeft="true" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingTop="20dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:id="@+id/settings_view_buttons">
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="@string/settings_view_server_preferences"
+            android:layout_height="44dip"
+            android:onClick="button_ServerPreferences"
+            android:id="@+id/settings_view_button_serverpreferences"></Button>
+    </LinearLayout>
+
+
+</LinearLayout>
